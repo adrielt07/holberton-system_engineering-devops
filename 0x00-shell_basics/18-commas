@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -amv --group-directories-first; printf "\n"
+ls --group-directories-first -amv; printf "\n"
