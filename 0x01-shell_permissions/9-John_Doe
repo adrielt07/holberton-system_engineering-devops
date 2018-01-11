@@ -1,2 +1,2 @@
 #!/bin/bash
-chown vagrant hello; chgrp vagrant hello; chmod 753 hello
+chmod 753 hello
