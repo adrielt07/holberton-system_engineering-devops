@@ -1,1 +1,1 @@
-This project is about basic Shell Scripting.
+This Project is about bash input and output operations.
