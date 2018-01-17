@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -tA | sed '1d' | head
+ls -tAp1 | grep -v '/' | head -n 10
