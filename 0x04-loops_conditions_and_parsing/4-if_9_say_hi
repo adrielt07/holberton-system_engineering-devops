@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#prints "Holberton School" 10 times using while loop
+#prints "hi" on 9th iteration else "Holberton School"
 i=0
 while [ $i -lt 10 ]; do
     if [ $i == 9 ]; then

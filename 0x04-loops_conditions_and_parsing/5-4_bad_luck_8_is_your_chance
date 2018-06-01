@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#prints "Holberton School" 10 times using while loop
+#prints "bad luck" for 4th iteration, "good luck" for 8th, otherwise "Holberton School"
 i=0
 while [ $i -lt 10 ]; do
     if [ $i == 4 ]; then
