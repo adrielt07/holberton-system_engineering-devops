@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#Write a Bash script that displays the content of the file /etc/password
+# Example:
+# The user USERNAME is part of the GROUP_ID gang, lives in HOME_DIRECTORY and
+# rides COMMAND/SHELL. USER ID's place is protected by the passcode PASSWORD,
+# more info about the user here: USER ID INFO
+
+while IFS=":" read -r Username Password UserID Group_ID Gecos Home Shell
+do
+    echo "The user $Username is part of the $Group_ID gang, lives in $Home and rides $Shell. $UserID's place is protected by the passcode $Password, more info about the user here: $Gecos"
+done < /etc/passwd
