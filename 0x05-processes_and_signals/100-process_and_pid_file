@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Y U no love me?!
+trap "echo I hate the kill command; rm /var/run/holberontscript.pid; exit" SIGTERM SIGQUIT
+echo "$$" >> /var/run/holberontscript.pid
+trap "echo Y U no love me?!" SIGINT
+while true
+do
+    echo "To infinity and beyond"
+    sleep 2
+done
