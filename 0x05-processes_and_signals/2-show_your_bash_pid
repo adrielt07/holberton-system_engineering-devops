@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-# displays a list of currently running processes.
-ps -aux --forest | grep bash
+# displays a list of currently running processes
+ps -aux --forest | grep "bash"
+# shellcheck disable=SC2009
