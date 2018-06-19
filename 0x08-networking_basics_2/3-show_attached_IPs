@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+ip addr show | cut -d " " -f 6 | awk 'NR % 3 == 0' | awk '$1' | cut -d '/' -f 1
