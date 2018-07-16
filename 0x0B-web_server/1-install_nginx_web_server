@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Install nginx listening on Port: 80
+# Page contains Holberton School when querying
+if [ ! -d "/usr/share/nginx/" ]; then
+    apt-get -y install nginx
+fi
+echo "Holberton School" > /usr/share/nginx/html/index.html
