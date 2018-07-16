@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# connect to server using SSH using private key
+ssh -i ~/.ssh/holberton ubuntu@35.227.25.29
