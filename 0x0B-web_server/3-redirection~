@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Configure your Nginx server so that /redirect_me is redirecting to another page.
+if [ ! -d "/usr/share/nginx/html/redirect_me" ]; then
+    mkdir /usr/share/nginx/html/redirect_me
+fi
+new_string="# location /redirect_me {\nrewrite ^/(.*)$ https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;\n}\n"
+sed "$new_string" /etc/nginx/sites-available/default
