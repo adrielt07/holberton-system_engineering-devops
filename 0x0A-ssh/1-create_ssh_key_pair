@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Creates an RSA keyp pair
+# Name of private key: holberton
+# Passphrase: betty
+# Number of bits: 4096
+ssh-keygen -b 4096 -N "betty" -f holberton
