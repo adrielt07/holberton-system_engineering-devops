@@ -5,3 +5,4 @@ if [ ! -d "/usr/share/nginx/" ]; then
     apt-get -y install nginx
 fi
 echo "Holberton School" > /usr/share/nginx/html/index.html
+service nginx restart
