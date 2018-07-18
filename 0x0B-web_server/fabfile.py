@@ -7,15 +7,15 @@ env.password = ""
 env.key_filename = "~/.ssh/holberton"
 
 
-def pack:
+def pack():
     local("tar --exclude='*.tar.gz' -cvzf holbertonwebapp.tar.gz .")
 
 
-def deploy:
+def deploy():
     put("holbertonwebapp.tar.gz", "/tmp")
     run("mkdir /tmp/holbertonwebapp")
     run("tar -xvf /tmp/holbertonwebapp.tar.gz -C /tmp/holbertonwebapp")
 
 
-def clean:
+def clean():
     local("rm holbertonwebapp.tar.gz")
