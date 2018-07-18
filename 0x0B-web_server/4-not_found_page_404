@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 # Configure your Nginx server so that /redirect_me is redirecting to another page.
-touch /usr/share/nginx/html/redirect_me
-new_string="# location /redirect_me/ {\nrewrite ^/(.*)$ https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;\n}\n"
-sed -i "$new_string" /etc/nginx/sites-available/default
 echo "Ceci n'est pas une page" > /usr/share/nginx/html/404.html
 old_error="#error_page"
 new_error="error_page"
