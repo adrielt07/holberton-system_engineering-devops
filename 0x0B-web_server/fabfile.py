@@ -1,6 +1,6 @@
 #!/usr/bin/python2.7
 from fabric.api import run, hosts, local, put, env
-
+from fabric.contrib import files
 
 env.user = "ubuntu"
 env.password = ""
@@ -13,7 +13,8 @@ def pack():
 
 def deploy():
     put("holbertonwebapp.tar.gz", "/tmp")
-    run("mkdir /tmp/holbertonwebapp")
+    if files.exists("/tmp/holbertonwebapp") is False:
+        run("mkdir /tmp/holbertonwebapp")
     run("tar -xvf /tmp/holbertonwebapp.tar.gz -C /tmp/holbertonwebapp")
 
 
