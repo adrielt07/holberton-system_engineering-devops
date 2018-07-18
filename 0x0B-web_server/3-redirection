@@ -6,4 +6,4 @@ fi
 echo "Holberton School" > /usr/share/nginx/html/index.html
 new_string="location /redirect_me {\n\t\trewrite ^(.*)$ https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;\n\t}\n"
 sed -i "/# Only/i$new_string" /etc/nginx/sites-available/default
-restart service nginx
+sudo service nginx restart
