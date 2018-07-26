@@ -1,6 +1,7 @@
 # creating a holberton file in /tmp/ directory
+
 file {'/tmp/holberton':
-  path    => '/tmp/',
+  path    => '/tmp/holberton',
   mode    => '0744',
   owner   => 'www-data',
   group   => 'www-data',
