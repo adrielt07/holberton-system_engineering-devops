@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Configure your Nginx server so that /redirect_me is redirecting to another page.
+# Configure your Nginx server
 if [ ! -d "/usr/share/nginx/" ]; then
     apt-get -y install nginx
 fi
@@ -10,5 +10,6 @@ echo "Ceci n'est pas une page" > /usr/share/nginx/html/404.html
 old_error="#error_page"
 new_error="error_page"
 sed -i "s/$old_error/$new_error/" /etc/nginx/sites-available/default
-
-service nginx restart
+header="add_header X-Served-By $(cat /etc/hostname);"
+sed -i "/# First attempt/ a $header" /etc/nginx/sites-available/default
+sudo service nginx restart
