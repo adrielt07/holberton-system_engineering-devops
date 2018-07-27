@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # sites-available/default has the correct configuration. Copied it over to sites-enabled
-sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 sudo service nginx restart
 sudo kill "$(pgrep -f nginx | head -1)"
