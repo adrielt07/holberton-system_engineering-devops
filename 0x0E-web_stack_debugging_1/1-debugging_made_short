@@ -2,4 +2,4 @@
 # sites-available/default has the correct configuration. Copied it over to sites-enabled
 sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 sudo service nginx restart
-sudo pkill -f nginx
+sudo kill "$(pgrep -f nginx | head -1)"
