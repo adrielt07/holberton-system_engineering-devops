@@ -8,4 +8,5 @@ frontend="frontend http_front\n \tbind *:80\n \tdefault_backend http_back\n"
 backend="backend http_back\n \tbalance roundrobin\n \tserver 342-web-01 35.227.25.29:80 check\n \tserver 342-web-02 35.237.11.121:80 check"
 
 sudo sed -i "\$a$frontend\n$backend" /etc/haproxy/haproxy.cfg
+sudo sed -i "\$aENABLED=1" ./haproxy
 sudo service haproxy restart
