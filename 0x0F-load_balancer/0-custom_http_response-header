@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # Configure your Nginx server
+apt-get -y update
 if [ ! -d "/usr/share/nginx/" ]; then
     apt-get -y install nginx
 fi
