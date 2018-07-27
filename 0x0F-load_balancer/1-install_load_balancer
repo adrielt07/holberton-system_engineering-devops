@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Install and configure HAproxy
+#sudo add-apt-repository -y ppa:vbernat/haproxy-1.7
+#sudo apt update
+#sudo apt install -y haproxy
+frontend="frontend http_front\n \tbind *:80\n \tdefault_backend http_back\n"
+
+backend="backend http_back\n \tbalance roundrobin\n \tserver 342-web-01 35.227.25.29:80 check\n \tserver 342-web-02 35.237.11.121:80 check"
+
+sudo sed -i "\$a$frontend\n$backend" /etc/haproxy/haproxy.cfg
+sudo service haproxy restart
