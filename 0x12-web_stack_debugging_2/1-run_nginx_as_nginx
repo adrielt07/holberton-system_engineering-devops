@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
 #nginx must be running as nginx user
-sudo chown nginx /etc/nginx/nginx.conf
-sudo chown nginx /etc/nginx/sites-enabled/default
-sudo sed -i 's/www-data/nginx/g' /etc/nginx/nginx.conf
-sudo sed -i 's/80/8080/g' /etc/nginx/sites-enabled/default
 sudo pkill nginx
 sudo pkill apache2 #which is listening to port 80
+sudo sed -i "s/#user/user/g" /etc/nginx/nginx.conf
+sudo sed -i 's/www-data/nginx/g' /etc/nginx/nginx.conf
+sudo sed -i 's/80/8080/g' /etc/nginx/sites-enabled/default
+sudo chown nginx /etc/nginx/nginx.conf
+sudo chown nginx /usr/sbin/nginx
+sudo chmod u+rwx /etc/nginx/nginx.conf
+sudo -u nginx service nginx start
 sudo service nginx restart
