@@ -25,3 +25,4 @@ Tasks:
 - 15-symbolic_link_permissions - changes the owner and the group owner of the file _hello to betty and holberton respectively.
 - 16-if_only - changes the owner of the file hello to betty only if it is owned by the user guillaume.
 - 101-man_holberton - Create a man page that looks exactly like the picture below
+![man_holberton](https://user-images.githubusercontent.com/33245729/43671996-c3f73340-9759-11e8-94c6-8363aae9cf0f.PNG)
