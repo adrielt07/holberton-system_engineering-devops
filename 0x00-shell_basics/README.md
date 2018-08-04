@@ -1,4 +1,4 @@
-#Shell, basics
+## Shell, basics
 
 This project is about:
 - Navigating shell
@@ -8,7 +8,7 @@ This project is about:
 Note:
 Files that the tasks mention may not exists on your local machine. You can assume 'if the file exists'.
 
-#Tasks:
+Tasks:
 - 0-current_working_directory - prints the absolute path name of the current working directory
 - 1-listit - Display the contents list of your current directory
 - 2-bring_me_home - script that changes the working directory to the user’s home directory

@@ -1,8 +1,8 @@
-Devop Engineer Project
+## Devop Engineer Project
 
 Project consists of:
--Bash Script, Fabric, Python
--Automation
--Networking
--Web Stack
--SSH
+- Bash Script, Fabric, Python
+- Automation
+- Networking
+- Web Stack
+- SSH
