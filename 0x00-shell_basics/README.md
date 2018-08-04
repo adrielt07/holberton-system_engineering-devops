@@ -5,7 +5,7 @@ This project is about:
 - Manipulating Files and directories
 - Creating symbolic link
 
-Notes:
+Note:
 Files that the tasks mention may not exists on your local machine. You can assume 'if the file exists'.
 
 #Tasks:
