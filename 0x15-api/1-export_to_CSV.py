@@ -28,7 +28,7 @@ if __name__ == '__main__':
                 not_done += 1
             task_list.append(task)
 
-    filename = "{}.csv".format(name)
+    filename = "{}.csv".format(argv[1])
 
     with open(filename, 'w', newline='') as csvfile:
         spamwriter = csv.writer(csvfile, delimiter=',', quoting=csv.QUOTE_ALL)
