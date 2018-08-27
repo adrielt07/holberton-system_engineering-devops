@@ -26,8 +26,8 @@ if __name__ == '__main__':
                 not_done += 1
     total = done + not_done
 
-    first_line = "Employee {} is done with tasks ({}/{}):".format(name,
-                                                                  done, total)
+    first_line = "Employee {} is done with tasks({}/{}):".format(name,
+                                                                 done, total)
 
     print(first_line)
     for task in task_list:
