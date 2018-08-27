@@ -4,7 +4,7 @@ Takes one argument - Employee's id
 Retrieves the number of task Employee has to do and
 the tasks that were done
 
-Convert the info to csv file
+Convert the info to json file
 '''
 import json
 import requests
