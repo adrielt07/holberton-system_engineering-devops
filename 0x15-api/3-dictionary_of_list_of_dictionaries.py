@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 '''
-Takes one argument - Employee's id
-Retrieves the number of task Employee has to do and
-the tasks that were done
+Retrieves all the tasks and create a json file
+File Format:
+{"UserID": [{EACH TASK}]}
 
-Convert the info to csv file
+Convert the info to json file
 '''
 import json
 import requests
