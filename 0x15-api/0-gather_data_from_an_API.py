@@ -31,4 +31,4 @@ if __name__ == '__main__':
 
     print(first_line)
     for task in task_list:
-        print("\t{}".format(task))
+        print("     {}".format(task))
