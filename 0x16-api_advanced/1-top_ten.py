@@ -32,7 +32,7 @@ def top_ten(subreddit):
         num = 10;
     count = 0
     for item in r['data']['children']:
-        if count == 10:
+        if count == num:
             break
         else:
             print(item['data']['title'])
