@@ -29,7 +29,7 @@ def top_ten(subreddit):
 
     num = len(r['data']['children'])
     if num > 10:
-        num = 10;
+        num = 10
     count = 0
     for item in r['data']['children']:
         if count == num:
