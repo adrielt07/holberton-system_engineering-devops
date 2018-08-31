@@ -36,4 +36,3 @@ def recurse(subreddit, hot_list=[], after=""):
         return hot_list
     else:
         recurse(subreddit, hot_list, r['data']['after'])
-        return hot_list
