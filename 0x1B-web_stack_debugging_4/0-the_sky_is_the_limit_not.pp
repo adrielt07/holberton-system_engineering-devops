@@ -1,4 +1,5 @@
 # Increase max limit
-exec { 'change limit':
-  command => '/bin/sed -i "s/15/2000/g" /etc/default/nginx'
+exec { 'limit increase':
+  command  => 'sed -i "s/-n 15/-n 2000/g"\
+  provider => 'shell'
 }
